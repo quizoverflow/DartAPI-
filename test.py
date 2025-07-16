@@ -2,21 +2,13 @@ from tool import *
 import time
 import random
 
-string = "0123456789"
+from tqdm import tqdm
 
-a= 1
-b= 3
-v= 4
-c = 5
-d = 2
 
-res = (a
-    + b
-    - c
-    + 1
-    + c
-    / d)
+nums = []
+for i in range(10000000):
+	nums.append(i)
 
-jinu = lambda y : print(res)
-
-jinu
+for i in tqdm(nums):
+	pass
+print("fin")
