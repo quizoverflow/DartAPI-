@@ -15,7 +15,7 @@ class ReportCrawler():
         self.api_key = meta_data["api_key"]
 
         #OpenDartReader 객체 생성
-        self.dart = OpenDartReader(self.api_key)
+        self.dart = OpenDartReader(self.api_key) # type: ignore
 
         test = self.dart.finstate('삼성전자', 2021)
         test.to_excel(excel_writer = 'data/samsung_test.xlsx')
